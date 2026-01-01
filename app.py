@@ -23,4 +23,29 @@ with col2:
     st.plotly_chart(fig2, use_container_width=True)
 
 st.success("Live interactive dashboard — ready for clients 🚀")
-BY hermann RAMOSTAFY -2026 
+
+# Professional background watermark
+watermark_bg = """
+<style>
+.stApp {
+    position: relative;
+}
+
+.watermark-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 60px;
+    color: lightgrey;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+}
+</style>
+<div class="watermark-bg">
+    Created by Hermann Ramostafy - 2026
+</div>
+"""
+st.markdown(watermark_bg, unsafe_allow_html=True)
