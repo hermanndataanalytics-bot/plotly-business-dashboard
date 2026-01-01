@@ -23,3 +23,4 @@ with col2:
     st.plotly_chart(fig2, use_container_width=True)
 
 st.success("Live interactive dashboard — ready for clients 🚀")
+BY hermann RAMOSTAFY -2026 
