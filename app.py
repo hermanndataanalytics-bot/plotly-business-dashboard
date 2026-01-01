@@ -24,28 +24,20 @@ with col2:
 
 st.success("Live interactive dashboard — ready for clients 🚀")
 
-# Professional background watermark
-watermark_bg = """
+# Footer matihanina mipetaka ambany
+footer = """
 <style>
-.stApp {
-    position: relative;
-}
-
-.watermark-bg {
+.footer {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
-    font-size: 60px;
-    color: lightgrey;
-    opacity: 0.1;
-    pointer-events: none;
-    z-index: 0;
-    white-space: nowrap;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
 }
 </style>
-<div class="watermark-bg">
+<div class="footer">
     Created by Hermann Ramostafy - 2026
 </div>
 """
-st.markdown(watermark_bg, unsafe_allow_html=True)
+st.markdown(footer, unsafe_allow_html=True)
