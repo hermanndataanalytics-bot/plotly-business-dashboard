@@ -17,6 +17,42 @@
     }
   </style>
 </head>
+  <style>
+/* ===== EXECUTIVE STICKY FOOTER ===== */
+.dashboard-footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: #F8FAFC; /* Mitovy amin'ny Plotly bg */
+    border-top: 1px solid #E2E8F0; /* Elegant divider */
+    padding: 14px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #1E293B; /* text_main */
+    z-index: 100;
+}
+
+/* Subtle highlight */
+.dashboard-footer span {
+    color: #1E3A8A; /* header_bg */
+    font-weight: bold;
+}
+/* Thin accent line (Executive touch) */
+.footer-accent {
+    width: 60px;
+    height: 3px;
+    background: #3B82F6; /* bar_color */
+    margin: 0 auto 8px auto;
+    border-radius: 2px;
+}
+</style>
+<footer class="dashboard-footer">
+    <div class="footer-accent"></div>
+    © 2026 <span>Hermann RAMOSTAFY</span> — Data Analyst & Business Intelligence Consultant  
+    <br>
+    Corporate Dashboards • KPI Tracking • Data Visualization & Automation
+</footer>
 <body>
   <h1>Business Intelligence & Revenue Growth Dashboard</h1>
   <p>Interactive Plotly dashboard – Executive KPI overview</p>
