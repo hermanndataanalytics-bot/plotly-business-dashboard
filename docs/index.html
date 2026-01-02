@@ -3,62 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <title>Business Intelligence Dashboard</title>
+
   <style>
+    /* ===== GLOBAL ===== */
     body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       font-family: Arial, sans-serif;
-      background: #f8fafc;
-      text-align: center;
-      padding: 40px;
+      background: #F8FAFC;
+      color: #1E293B;
     }
+
+    .container {
+      flex: 1;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #1E3A8A;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #475569;
+      margin-bottom: 30px;
+    }
+
     img {
       max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Image hover (portfolio touch) */
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(30, 58, 138, 0.25);
+    }
+
+    /* ===== EXECUTIVE STICKY FOOTER ===== */
+    .dashboard-footer {
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      background: #F8FAFC;
+      border-top: 1px solid #E2E8F0;
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 13px;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    /* Footer hover */
+    .dashboard-footer:hover {
+      background: #F1F5F9;
+      box-shadow: 0 -6px 20px rgba(30, 58, 138, 0.08);
+    }
+
+    /* Accent divider */
+    .footer-accent {
+      width: 60px;
+      height: 3px;
+      background: #3B82F6;
+      margin: 0 auto 8px auto;
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    .dashboard-footer:hover .footer-accent {
+      width: 120px;
+    }
+
+    /* Name highlight */
+    .dashboard-footer span {
+      color: #1E3A8A;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .dashboard-footer:hover span {
+      color: #3B82F6;
     }
   </style>
 </head>
-  <style>
-/* ===== EXECUTIVE STICKY FOOTER ===== */
-.dashboard-footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background: #F8FAFC; /* Mitovy amin'ny Plotly bg */
-    border-top: 1px solid #E2E8F0; /* Elegant divider */
-    padding: 14px 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    color: #1E293B; /* text_main */
-    z-index: 100;
-}
 
-/* Subtle highlight */
-.dashboard-footer span {
-    color: #1E3A8A; /* header_bg */
-    font-weight: bold;
-}
-/* Thin accent line (Executive touch) */
-.footer-accent {
-    width: 60px;
-    height: 3px;
-    background: #3B82F6; /* bar_color */
-    margin: 0 auto 8px auto;
-    border-radius: 2px;
-}
-</style>
-<footer class="dashboard-footer">
+<body>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="container">
+    <h1>Business Intelligence & Revenue Growth Dashboard</h1>
+    <p>Interactive Plotly dashboard – Executive KPI overview</p>
+
+    <!-- Ataovy antoka fa ao amin’ny root ilay sary -->
+    <img src="persuasive_dashboard_v2.png" alt="Business Intelligence Dashboard">
+
+    <p style="margin-top:30px;">
+      Source code available on GitHub
+    </p>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="dashboard-footer">
     <div class="footer-accent"></div>
     © 2026 <span>Hermann RAMOSTAFY</span> — Data Analyst & Business Intelligence Consultant  
     <br>
     Corporate Dashboards • KPI Tracking • Data Visualization & Automation
-</footer>
-<body>
-  <h1>Business Intelligence & Revenue Growth Dashboard</h1>
-  <p>Interactive Plotly dashboard – Executive KPI overview</p>
-  <img src="persuasive_dashboard_v2.png">
-  <p style="margin-top:30px;">
-    Source code available on GitHub
-  </p>
+  </footer>
+
 </body>
 </html>
